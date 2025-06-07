@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Hopital</title>
+    <style>
+        body{
+    font-family: Arial,sans-serif;
+    margin: 0;
+    background: #27977ff5;
+    padding: 0;
+    color: white;
+    
+        }
+        header{
+            background:#1b806af5;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0, 0,0, 0,2);
+        }
+        h1{
+            margin: 0;
+           font-size: 2.2rem;
+           text-align: right;
+           padding: 5px 15px;
+           font-family: Georgia;
+        }
+        .container{
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .description{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0,0, 0,1);
+            margin-bottom: 30px;
+        }
+        .description h2{
+            color: #1f8ac0;
+        }
+
+        p{
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            font-size: 18px;
+            color: #555;
+            
+        }
+        .screenshots{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+            gap: 15px;
+           
+        }
+        .screenshots img{
+            width: 70%;
+            opacity: 0;
+            transform:translateY(20px) ;
+            animation: fadeIn 1s ease forwards;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0,0, 0,15);
+            transition: transform 0.3s ease;
+        
+        }
+        .screenshots
+        img:nth-child(1){
+            animation-delay: 0s;
+        }
+        .screenshots
+        img:nth-child(2){
+            animation-delay: 0.5s;
+        }
+        .screenshots
+        img:nth-child(3){
+            animation-delay: 1s;
+        }
+        .screenshots
+        img:nth-child(4){
+            animation-delay: 1.5s;
+        }
+        @keyframes fadeIn {to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+            
+        }
+        .screenshots img:hover{
+            transform: scale(1.03);
+        }
+        footer{
+            text-align: left;
+            padding: 15px;
+            background: #1f8ac0;
+            color: white;
+            margin-top: 40px;
+        }
+        .lili{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+            gap: 15px;
+        }
+        .lili img{
+            width: 70%;
+            opacity: 0;
+            transform:translateY(20px) ;
+            animation: fadeIn 1s ease forwards;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0,0, 0,15);
+            transition: transform 0.3s ease;
+        }
+        .contain{
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .des{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0,0, 0,1);
+            margin-bottom: 30px;
+        }
+        .des h2{
+            color: #1f8ac0;
+        }
+
+        a{
+            max-width: 800px;
+            margin: 0 auto 30px auto;
+            font-size: 18px;
+            color: #555;
+            
+        }
+        .essai-btn {
+    display: inline-block;
+    background-color:#1b806af5;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .essai-btn:hover {
+    background-color: black;
+  }
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #f9fdfb;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: white 
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom:5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: black;
+  }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            🧬Centre Hospitalier Milfort
+        </h1>
+    </header>
+    <div class="container">
+        <div class="description">
+            <h2>
+                Gestion Hospitaliere 
+            </h2>
+            <p>
+                Nous vous souhaitons la bienvenue
+            au centre Hospitalier Milfort, un etablisement
+            de sante moderne et engage a offrir des soins
+            de qualite a tous nos patient.
+
+            </p>
+        </div>
+   
+<a href="#" class="essai-btn">Commencer un essai gratuit</a>
+        <div class="lili">
+            <img src="image/lele.jpg"
+             alt="capture 5">
+        </div>
+        </div>
+        <div class="container">
+            <div class="description">
+                <h2>
+                    🏥
+                    Outil performant de gestion Hospitalier
+                </h2>
+                <p>
+                  Notre systeme de gestion 
+                  hospitaliere propose des fonctionaliter puissantes
+                  permettant une prise en charge optimale
+                  des patients, une organisation fluide du personnel
+                  medical, et un suivi efficace des dossiers medicaux.
+
+
+               
+                </p>
+            </div>
+            <div class="container">
+                <div class="description">
+                    <h2>
+                        🧑🏿‍⚕️ Fonctionaliter de Gestion
+                        
+                    </h2>
+                    <p>
+                      Notre systeme de gestion hospitaliere
+                      integre un ensemble de fonctionaliter robuste
+                    , concues pour optimiser l'organisation
+                    et la suivi des activiter medicales et administrative:
+
+                    <h2>
+                        
+                        Gestion des utilisateurs
+                    </h2>
+                    <p>
+                        Administration sécurisée des accès
+                         au système avec attribution de rôles 
+                         spécifiques selon
+                          les profils (médecins, personnel administratif, etc.).
+                    </p>
+
+                        <h2>
+                        Gestion du personnel médical
+                    </h2>
+                    <p>
+                        Enregistrement structuré des professionnels
+                         de santé, incluant leurs informations
+                          personnelles, spécialités, disponibilités
+                           et services associés.
+                        </p>
+
+                        <h2>
+                        Gestion des dossiers patients
+                    </h2>
+                    <p>
+                        Suivi centralisé et confidentiel 
+                        des données médicales des patients
+                         : informations d'identité, historique 
+                         médical, consultations, diagnostics.
+                        </p>
+
+                        <h2>
+                        Gestion des rendez-vous
+                    </h2>
+                    <p>
+                        Planification automatisée des
+                         consultations, avec options de modification,
+                          annulation ou recherche rapide par identifiant ou date.
+                        </p>
+
+                        <h2>
+                        Gestion des prescriptions médicales
+                    </h2>
+                    <p>
+                        Création, consultation et archivage 
+                        des ordonnances pour chaque patient, 
+                        assurant un suivi rigoureux du traitement prescrit.
+                    </p>
+
+                        <h2>
+                        Recherche avancée par identifiant
+                    </h2>
+                    <p>
+                        Accès instantané aux informations 
+                        relatives aux patients, médecins ou
+                         rendez-vous grâce à un système de 
+                         recherche par identifiant unique.
+                        </p>
+              
+                    </p>
+                </div>
+<h1>
+  Decouvrez l'interface
+  
+</h1>
+   
+    
+    <div class="screenshots">
+
+    <img src="image/kiki.png"
+    alt="image 1">
+    <img src="image/mama.png"
+     alt="image 2">
+     <img src="image/papa.png" 
+     alt="image 3">
+     <img src="image/pipi.png" 
+     alt="image 4">
+    
+    </div>
+
+    <h2>
+        
+    </h2>
+
+<footer>
+    📞 Contactez-nous
+</footer>
+<h2>
+    Pour toute information ou assistance, veuillez nous contacter via les coordonnées suivantes :
+</h2>
+<h2>
+    📍 Adresse :
+    Croix-des-Bousquet, Lathan 33
+</h2>
+<h2>
+    📞 Téléphone :
+    ‪+509 49 45 54 58‬ / ‪+509 34 46 98 47‬
+    </h2>
+    <h2>
+    📧 Email :
+    milfortalan@gmail.com
+    <form >
+    </h2>
+    <label for="message">Nom Complet :</label><br>
+    <textarea id="message" name="message" rows="2" cols="40" placeholder="Écrivez votre nom ici..."></textarea>
+    <label for="message">sujet :</label><br>
+    <textarea id="message" name="message" rows="2" cols="40" placeholder="Écrivez votre sujet ici..."></textarea>
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="4" cols="50" placeholder="Écrivez votre message ici..."></textarea>
+    <button type="submit">Envoyer</button>
+</form>
+<footer>
+  <h2>
+    Centre Hospitalier Milfort
+  </h2>
+  Notre mission est de placer le patient au cœur
+   de nos priorités, en assurant un accompagnement
+    médical professionnel, une écoute bienveillante
+     et une technologie au service de la santé.
+     <h2>
+         #Facebook #SocialMedia
+     </h2>
+     <h2>
+         Liens 
+     
+     <h3>
+     Outils de Fonctionaliter
+     <h3>
+     <h3>
+         capture d'ecran
+     </h3>
+     <h3>
+         Contacts
+     </h3>
+     <h3>
+         Documentation
+     </h3>
+    </h2>
+</footer>
+    
+</body>
+</html>
